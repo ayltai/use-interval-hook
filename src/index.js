@@ -1,6 +1,9 @@
-import React from 'react'
-import styles from './styles.module.css'
+import { useEffect, } from 'react';
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export const useInterval = (callback, interval) => {
+    useEffect(() => {
+        const id = window.setInterval(callback, interval);
+
+        return () => clearInterval(id);
+    }, [ callback, interval, ]);
+};

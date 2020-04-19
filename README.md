@@ -1,30 +1,22 @@
-# use-interval
+# React Hook: use-interval
+A React hook for `useInterval()`.
 
-> A React hook for useInterval()
+[![CircleCI](https://img.shields.io/circleci/project/github/ayltai/use-interval-hook/master.svg?style=flat)](https://circleci.com/gh/ayltai/use-interval-hook) ![Maintenance](https://img.shields.io/maintenance/yes/2020) [![Release](https://img.shields.io/github/release/ayltai/use-interval-hook.svg?style=flat)](https://github.com/ayltai/use-interval-hook/releases) [![License](https://img.shields.io/github/license/ayltai/use-interval-hook.svg?style=flat)](https://github.com/ayltai/use-interval-hook/blob/master/LICENSE)
 
-[![NPM](https://img.shields.io/npm/v/use-interval.svg)](https://www.npmjs.com/package/use-interval) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Buy me a coffee](https://img.shields.io/static/v1?label=Buy%20me%20a&message=coffee&color=important&style=for-the-badge&logo=buy-me-a-coffee&logoColor=white)](https://buymeacoff.ee/ayltai)
 
-## Install
-
-```bash
-npm install --save use-interval
+## Installation
+```shell script
+npm install @ayltai/use-interval
 ```
 
 ## Usage
-
-```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'use-interval'
-import 'use-interval/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+```js
+useInterval(callback, interval);
 ```
 
-## License
-
-MIT © [ayltai](https://github.com/ayltai)
+## Parameters
+| Parameter | Description                                                     |
+|-----------|-----------------------------------------------------------------|
+| `callback` | The function that will be called every `interval` milliseconds |
+| `interval` | A number that represents the interval                          |
